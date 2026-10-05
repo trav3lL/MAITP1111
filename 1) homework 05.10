@@ -1,0 +1,12 @@
+nums = [1, 3, 7, 2, -4, 5, 10, -2, 16, -9]
+
+negative = False
+all_sum = 0
+
+for x in nums:
+    if negative:
+        all_sum += x
+    elif x < 0:
+        negative = True
+
+print(all_sum) # 5+10-2+16-9 = 20
