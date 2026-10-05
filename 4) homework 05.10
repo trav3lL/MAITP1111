@@ -1,0 +1,13 @@
+nums = [3, 6, 12, -6, 7, 2]
+pos_sum = 0
+count = 0
+for num in nums:
+    if num < 0:
+        break
+    if num > 0:
+        pos_sum += num
+        count += 1
+if count > 0:
+    print(pos_sum/count)
+else:
+    print("нету положительных элементов")
