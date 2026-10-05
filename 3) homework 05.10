@@ -1,0 +1,15 @@
+negative = False
+all_sum = 0
+last_sum = 0
+while True:
+    num = int(input())
+    if num == 0:
+        break
+    if num < 0:
+        last_sum = all_sum
+        negative = True
+    all_sum += num
+if negative == False:
+    print('нету отрицательного')
+else:
+    print(last_sum)
