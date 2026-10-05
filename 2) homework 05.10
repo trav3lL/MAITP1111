@@ -1,0 +1,14 @@
+nums = [1, 3, 7, 2, 5, 10, 16]
+
+negative = False
+all_sum = 0
+
+for x in nums:
+    if negative:
+        all_sum += x
+    elif x < 0:
+        negative = True
+if negative == False:
+    print('нету отрицательного')
+else:
+    print(all_sum)
